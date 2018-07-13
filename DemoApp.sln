@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.Repositories.Contra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.ApplicationService", "DemoApp.ApplicationService\DemoApp.ApplicationService.csproj", "{9E0A0E77-E6B0-44DD-9639-947B74296D79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.ApplicationService.Contracts", "DemoApp.ApplicationService.Contracts\DemoApp.ApplicationService.Contracts.csproj", "{EB58C759-E8FB-4966-B74B-6880295A0961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9E0A0E77-E6B0-44DD-9639-947B74296D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E0A0E77-E6B0-44DD-9639-947B74296D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E0A0E77-E6B0-44DD-9639-947B74296D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB58C759-E8FB-4966-B74B-6880295A0961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB58C759-E8FB-4966-B74B-6880295A0961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB58C759-E8FB-4966-B74B-6880295A0961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB58C759-E8FB-4966-B74B-6880295A0961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
