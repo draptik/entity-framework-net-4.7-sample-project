@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DemoApp.ApplicationService
+﻿namespace DemoApp.ApplicationService
 {
     public class CustomerService
     {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DemoApp.Repositories.Contracts
+﻿namespace DemoApp.Repositories.Contracts
 {
     public interface ICustomerRepository
     {
