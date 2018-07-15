@@ -1,6 +1,8 @@
-﻿namespace DemoApp.ApplicationService
+﻿using DemoApp.ApplicationService.Contracts;
+
+namespace DemoApp.ApplicationService
 {
-    public class CustomerService
+    public class CustomerService : ICustomerService
     {
     }
 }
