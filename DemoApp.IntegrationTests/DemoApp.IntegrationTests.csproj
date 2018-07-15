@@ -65,7 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CustomerServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +79,32 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoApp.ApplicationService\DemoApp.ApplicationService.csproj">
+      <Project>{A86CA450-9023-413C-B0EE-92EC04B8C7F4}</Project>
+      <Name>DemoApp.ApplicationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.DAL\DemoApp.DAL.csproj">
+      <Project>{64F6AA87-64E2-4AF5-9606-0630D77A3564}</Project>
+      <Name>DemoApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.DbLocator\DemoApp.DbLocator.csproj">
+      <Project>{8DC66841-CBB8-4040-BB61-57ADF6F581B6}</Project>
+      <Name>DemoApp.DbLocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Domain\DemoApp.Domain.csproj">
+      <Project>{7B69BD32-CB5B-44E4-8B00-DA3BD1AD7C29}</Project>
+      <Name>DemoApp.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Repositories.Contracts\DemoApp.Repositories.Contracts.csproj">
+      <Project>{6CE7884A-695C-443F-A175-75FCA5E842E3}</Project>
+      <Name>DemoApp.Repositories.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Repositories\DemoApp.Repositories.csproj">
+      <Project>{5CC9AC1A-EA65-428D-9C60-CD4DAF266497}</Project>
+      <Name>DemoApp.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
