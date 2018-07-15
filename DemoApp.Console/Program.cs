@@ -13,7 +13,9 @@ namespace DemoApp.Console
 
         private static void StartWithoutIoC()
         {
-            var customerService = new CustomerService(new CustomerRepository(new DemoAppDbContext()));
+            var demoAppDbContext = new DemoAppDbContext();
+            var customerRepository = new CustomerRepository(demoAppDbContext);
+            var customerService = new CustomerService(customerRepository);
             var customers = customerService.GetCustomers();
         }
     }
