@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,10 +51,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DemoApp.DAL\DemoApp.DAL.csproj">
+      <Project>{64F6AA87-64E2-4AF5-9606-0630D77A3564}</Project>
+      <Name>DemoApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Domain\DemoApp.Domain.csproj">
+      <Project>{7B69BD32-CB5B-44E4-8B00-DA3BD1AD7C29}</Project>
+      <Name>DemoApp.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DemoApp.Repositories.Contracts\DemoApp.Repositories.Contracts.csproj">
       <Project>{6CE7884A-695C-443F-A175-75FCA5E842E3}</Project>
       <Name>DemoApp.Repositories.Contracts</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,6 +48,14 @@
       <Project>{9D32A828-64AF-46C1-9FD2-02126AA8A179}</Project>
       <Name>DemoApp.ApplicationService.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Domain\DemoApp.Domain.csproj">
+      <Project>{7B69BD32-CB5B-44E4-8B00-DA3BD1AD7C29}</Project>
+      <Name>DemoApp.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Repositories.Contracts\DemoApp.Repositories.Contracts.csproj">
+      <Project>{6CE7884A-695C-443F-A175-75FCA5E842E3}</Project>
+      <Name>DemoApp.Repositories.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

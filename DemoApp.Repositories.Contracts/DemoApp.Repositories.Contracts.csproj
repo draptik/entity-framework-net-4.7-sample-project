@@ -43,5 +43,11 @@
     <Compile Include="ICustomerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoApp.Domain\DemoApp.Domain.csproj">
+      <Project>{7B69BD32-CB5B-44E4-8B00-DA3BD1AD7C29}</Project>
+      <Name>DemoApp.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

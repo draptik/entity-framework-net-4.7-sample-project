@@ -48,5 +48,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoApp.ApplicationService\DemoApp.ApplicationService.csproj">
+      <Project>{A86CA450-9023-413C-B0EE-92EC04B8C7F4}</Project>
+      <Name>DemoApp.ApplicationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.DAL\DemoApp.DAL.csproj">
+      <Project>{64F6AA87-64E2-4AF5-9606-0630D77A3564}</Project>
+      <Name>DemoApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Domain\DemoApp.Domain.csproj">
+      <Project>{7B69BD32-CB5B-44E4-8B00-DA3BD1AD7C29}</Project>
+      <Name>DemoApp.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Repositories.Contracts\DemoApp.Repositories.Contracts.csproj">
+      <Project>{6CE7884A-695C-443F-A175-75FCA5E842E3}</Project>
+      <Name>DemoApp.Repositories.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoApp.Repositories\DemoApp.Repositories.csproj">
+      <Project>{5CC9AC1A-EA65-428D-9C60-CD4DAF266497}</Project>
+      <Name>DemoApp.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
